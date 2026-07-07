@@ -1,0 +1,12 @@
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\bin\Debug\net8.0\AdminService.Application.deps.json
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\bin\Debug\net8.0\AdminService.Application.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\bin\Debug\net8.0\AdminService.Application.pdb
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.AssemblyInfoInputs.cache
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.AssemblyInfo.cs
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.csproj.CoreCompileInputs.cache
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.sourcelink.json
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\refint\AdminService.Application.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\AdminService.Application.pdb
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\AdminService\AdminService.Application\obj\Debug\net8.0\ref\AdminService.Application.dll
