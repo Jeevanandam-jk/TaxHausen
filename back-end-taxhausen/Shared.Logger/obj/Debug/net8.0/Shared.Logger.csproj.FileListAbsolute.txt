@@ -1,0 +1,12 @@
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\bin\Debug\net8.0\Shared.Logger.deps.json
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\bin\Debug\net8.0\Shared.Logger.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\bin\Debug\net8.0\Shared.Logger.pdb
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.AssemblyInfoInputs.cache
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.AssemblyInfo.cs
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.csproj.CoreCompileInputs.cache
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.sourcelink.json
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\refint\Shared.Logger.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\Shared.Logger.pdb
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.Logger\obj\Debug\net8.0\ref\Shared.Logger.dll

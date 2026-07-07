@@ -1,0 +1,12 @@
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\bin\Debug\net8.0\Shared.InterServiceHelper.deps.json
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\bin\Debug\net8.0\Shared.InterServiceHelper.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\bin\Debug\net8.0\Shared.InterServiceHelper.pdb
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.AssemblyInfoInputs.cache
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.AssemblyInfo.cs
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.csproj.CoreCompileInputs.cache
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.sourcelink.json
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\refint\Shared.InterServiceHelper.dll
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\Shared.InterServiceHelper.pdb
+C:\Users\JeevanandamKandasamy\Desktop\TaxHausen\back-end-taxhausen\Shared.InterServiceHelper\obj\Debug\net8.0\ref\Shared.InterServiceHelper.dll
