@@ -1,6 +1,8 @@
-using Yarp.ReverseProxy;
+using ApiGateway.Extension;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.ConfigureSharedLoggerService(builder.Services);
 
 builder.Services
     .AddReverseProxy()
