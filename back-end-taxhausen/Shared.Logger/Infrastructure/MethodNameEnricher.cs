@@ -4,8 +4,23 @@ using Serilog.Events;
 
 namespace Shared.Logger.Infrastructure;
 
+/// <summary>
+/// Enriches log events with the name of the application method
+/// from which the log entry originated.
+/// </summary>
 public class MethodNameEnricher : ILogEventEnricher
 {
+    /// <summary>
+    /// Adds the <c>MethodName</c> property to the log event by inspecting
+    /// the current call stack and identifying the first application method.
+    /// Framework and logging-related methods are ignored.
+    /// </summary>
+    /// <param name="logEvent">
+    /// The log event to enrich.
+    /// </param>
+    /// <param name="propertyFactory">
+    /// The factory used to create log event properties.
+    /// </param>
     public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
     {
         int skipFrames = 2;
@@ -25,14 +40,17 @@ public class MethodNameEnricher : ILogEventEnricher
                 continue;
             }
 
-            string methodName = method.DeclaringType?.Name ?? "Unknown";
+            string methodName = method.Name ?? "Unknown";
             if (methodName.Contains("<") && methodName.Contains(">"))
             {
-                methodName = methodName.Substring(methodName.IndexOf('<') + 1, methodName.IndexOf('>') - methodName.IndexOf('<') - 1);
+                methodName = methodName.Substring(
+                    methodName.IndexOf('<') + 1,
+                    methodName.IndexOf('>') - methodName.IndexOf('<') - 1);
             }
 
-            string classMethodName = $"{methodName}";
-            LogEventProperty property = propertyFactory.CreateProperty("MethodName", classMethodName);
+            LogEventProperty property =
+                propertyFactory.CreateProperty("MethodName", methodName);
+
             logEvent.AddPropertyIfAbsent(property);
             break;
         }

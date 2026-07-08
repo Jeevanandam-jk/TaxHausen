@@ -8,4 +8,8 @@
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Shared.Logger\Shared.Logger.csproj" />
+  </ItemGroup>
+
 </Project>
