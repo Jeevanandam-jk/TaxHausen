@@ -1,0 +1,38 @@
+<Solution>
+  <Folder Name="/AdminService/">
+    <Project Path="AdminService/AdminService.API/AdminService.API.csproj" />
+    <Project Path="AdminService/AdminService.Application/AdminService.Application.csproj" />
+    <Project Path="AdminService/AdminService.Domain/AdminService.Domain.csproj" />
+    <Project Path="AdminService/AdminService.Infrastructure/AdminService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/CalculationService/">
+    <Project Path="CalculationService/CalculationService.API/CalculationService.API.csproj" />
+    <Project Path="CalculationService/CalculationService.Application/CalculationService.Application.csproj" />
+    <Project Path="CalculationService/CalculationService.Domain/CalculationService.Domain.csproj" />
+    <Project Path="CalculationService/CalculationService.Infrastructure/CalculationService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/ClientService/">
+    <Project Path="ClientService/ClientService.API/ClientService.API.csproj" />
+    <Project Path="ClientService/ClientService.Application/ClientService.Application.csproj" />
+    <Project Path="ClientService/ClientService.Domain/ClientService.Domain.csproj" />
+    <Project Path="ClientService/ClientService.Infrastructure/ClientService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/IdentityService/">
+    <Project Path="IdentityService/IdentityService.API/IdentityService.API.csproj" />
+    <Project Path="IdentityService/IdentityService.Application/IdentityService.Application.csproj" />
+    <Project Path="IdentityService/IdentityService.Domain/IdentityService.Domain.csproj" />
+    <Project Path="IdentityService/IdentityService.Infrastructure/IdentityService.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/ReportService/">
+    <Project Path="ReportService/ReportService.API/ReportService.API.csproj" />
+    <Project Path="ReportService/ReportService.Application/ReportService.Application.csproj" />
+    <Project Path="ReportService/ReportService.Domain/ReportService.Domain.csproj" />
+    <Project Path="ReportService/ReportService.Infrastructure/ReportService.Infrastructure.csproj" />
+  </Folder>
+  <Project Path="ApiGateway/ApiGateway.csproj" />
+  <Project Path="Shared.Authorization/Shared.Authorization.csproj" />
+  <Project Path="Shared.Common/Shared.Common.csproj" />
+  <Project Path="Shared.Cryptography/Shared.Cryptography.csproj" />
+  <Project Path="Shared.InterServiceHelper/Shared.InterServiceHelper.csproj" />
+  <Project Path="Shared.Logger/Shared.Logger.csproj" />
+</Solution>
