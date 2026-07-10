@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Shared.Authorization\Shared.Authorization.csproj" />
     <ProjectReference Include="..\..\Shared.Logger\Shared.Logger.csproj" />
   </ItemGroup>
 
