@@ -7,6 +7,7 @@ builder.Services.AddControllers();
 
 builder.ConfigureSharedLoggerService(builder.Services);
 builder.Services.ConfigureAuthorizationService(builder.Configuration);
+builder.Services.ConfigureCryptographyServices();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

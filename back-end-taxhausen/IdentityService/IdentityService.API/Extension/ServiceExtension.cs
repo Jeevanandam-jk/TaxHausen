@@ -1,3 +1,5 @@
+using Shared.Cryptography.Contract;
+using Shared.Cryptography.Service;
 using Shared.Logger.Extension;
 
 namespace IdentityService.API.Extension;
@@ -23,5 +25,22 @@ public static class ServiceExtension
         IServiceCollection services)
     {
         services.AddSharedLogger(builder.Configuration, "IdentityService");
+    }
+
+    /// <summary>
+    /// Registers the shared cryptography services with the dependency injection container.
+    /// </summary>
+    /// <param name="services">
+    /// The service collection to which the cryptography services will be added.
+    /// </param>
+    /// <returns>
+    /// The updated <see cref="IServiceCollection"/> instance.
+    /// </returns>
+    public static IServiceCollection ConfigureCryptographyServices(
+        this IServiceCollection services)
+    {
+        services.AddScoped<IHashService, HashService>();
+
+        return services;
     }
 }
