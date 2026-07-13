@@ -16,8 +16,8 @@ public class HashService : IHashService
     /// <summary>
     /// Computes a cryptographic hash for the specified text using the provided hashing algorithm.
     /// </summary>
-    /// <param name="text">
-    /// The plain text to be hashed.
+    /// <param name="value">
+    /// Value that to be hashed
     /// </param>
     /// <param name="algorithm">
     /// The cryptographic hashing algorithm to use.
@@ -26,16 +26,16 @@ public class HashService : IHashService
     /// A hexadecimal string representation of the computed hash.
     /// </returns>
     /// <exception cref="ArgumentNullException">
-    /// Thrown when <paramref name="text"/> or <paramref name="algorithm"/> is <c>null</c>.
+    /// Thrown when <paramref name="value"/> or <paramref name="algorithm"/> is <c>null</c>.
     /// </exception>
-    public string ComputeHash(string text, HashAlgorithm algorithm)
+    public string ComputeHash(string value, HashAlgorithm algorithm)
     {
-        ArgumentNullException.ThrowIfNull(text);
+        ArgumentNullException.ThrowIfNull(value);
         ArgumentNullException.ThrowIfNull(algorithm);
 
         using (algorithm)
         {
-            byte[] bytes = algorithm.ComputeHash(Encoding.UTF8.GetBytes(text));
+            byte[] bytes = algorithm.ComputeHash(Encoding.UTF8.GetBytes(value));
 
             return Convert.ToHexString(bytes).ToLowerInvariant();
         }
