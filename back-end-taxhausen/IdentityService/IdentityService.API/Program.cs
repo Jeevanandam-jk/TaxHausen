@@ -1,17 +1,25 @@
 using IdentityService.API.Extension;
+using IdentityService.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
 using Shared.Authorization.Extension;
+using Shared.Comon.Constant;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
 builder.ConfigureSharedLoggerService(builder.Services);
 builder.Services.ConfigureAuthorizationService(builder.Configuration);
+builder.Services.ConfigureCryptographyServices();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+builder.Services.AddDbContext<IdentityDbContext>(options =>
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString(Constants.DEFAULT_CONNECTION)));
+
+WebApplication app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {

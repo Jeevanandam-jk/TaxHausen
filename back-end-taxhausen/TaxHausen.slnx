@@ -33,6 +33,7 @@
   <Project Path="Shared.Authorization/Shared.Authorization.csproj" />
   <Project Path="Shared.Common/Shared.Common.csproj" />
   <Project Path="Shared.Cryptography/Shared.Cryptography.csproj" />
+  <Project Path="Shared.Exceptions/Shared.Exceptions.csproj" />
   <Project Path="Shared.InterServiceHelper/Shared.InterServiceHelper.csproj" />
   <Project Path="Shared.Logger/Shared.Logger.csproj" />
 </Solution>

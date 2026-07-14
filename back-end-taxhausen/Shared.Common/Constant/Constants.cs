@@ -26,6 +26,8 @@ public class Constants
 
     public const string BEARER = "Bearer ";
 
+    public const string DEFAULT_CONNECTION = "DefaultConnection";
+
     public static class Numbers
     {
         public const int NUM_ONE = 1;
