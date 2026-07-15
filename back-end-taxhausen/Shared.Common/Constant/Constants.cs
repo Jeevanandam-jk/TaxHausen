@@ -28,6 +28,8 @@ public class Constants
 
     public const string DEFAULT_CONNECTION = "DefaultConnection";
 
+    public const string TIMESTAMP_WITHOUT_TIME_ZONE = "timestamp without time zone";
+
     public static class Numbers
     {
         public const int NUM_ONE = 1;
