@@ -2,7 +2,7 @@ using IdentityService.Domain.Model;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Shared.Common.Extension;
-using Shared.Comon.Constant;
+using Shared.Common.Constant;
 
 namespace IdentityService.Infrastructure.Persistence.ApplicationContext;
 

@@ -1,4 +1,4 @@
-namespace Shared.Comon.Constant;
+namespace Shared.Common.Constant;
 
 public class Constants
 {
