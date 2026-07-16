@@ -1,5 +1,5 @@
 using Shared.Authorization.Contract;
-using Shared.Comon.Constant;
+using Shared.Common.Constant;
 
 namespace Shared.Authorization.Infrastructure;
 

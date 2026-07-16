@@ -1,7 +1,7 @@
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using Shared.Authorization.Contract;
-using Shared.Comon.Constant;
+using Shared.Common.Constant;
 using Shared.Logger.Contract;
 
 namespace Shared.Authorization.Middleware;
