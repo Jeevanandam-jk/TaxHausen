@@ -1,5 +1,5 @@
 using IdentityService.API.Extension;
-using IdentityService.Infrastructure.Persistence;
+using IdentityService.Infrastructure.Persistence.ApplicationContext;
 using Microsoft.EntityFrameworkCore;
 using Shared.Authorization.Extension;
 using Shared.Comon.Constant;
