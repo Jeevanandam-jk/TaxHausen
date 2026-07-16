@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Shared.Common.Extension;
 using Shared.Comon.Constant;
 
-namespace IdentityService.Infrastructure.Persistence;
+namespace IdentityService.Infrastructure.Persistence.ApplicationContext;
 
 /// <summary>
 /// Represents the Entity Framework Core database context for the Identity Service.
