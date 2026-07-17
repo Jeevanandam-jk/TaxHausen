@@ -3,6 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Shared.Common.Extension;
 using Shared.Common.Constant;
+using Shared.Common.Model;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace IdentityService.Infrastructure.Persistence.ApplicationContext;
 
@@ -143,5 +145,66 @@ public class IdentityDbContext : DbContext
                 index.SetDatabaseName(index.GetDatabaseName()!.ConvertToSnakeCase());
             }
         }
+    }
+
+    /// <summary>
+    /// Updates audit fields for all tracked entities before they are persisted to the database.
+    /// </summary>
+    /// <param name="userId">
+    /// The identifier of the user performing the database operation.
+    /// This value is used to populate the <c>CreatedBy</c> and <c>UpdatedBy</c> audit fields.
+    /// </param>
+    private void OnBeforeSaving(Guid userId)
+    {
+        DateTime now = DateTime.Now;
+
+        foreach (EntityEntry<BaseModel> entry in ChangeTracker.Entries<BaseModel>())
+        {
+            switch (entry.State)
+            {
+                case EntityState.Added:
+                    entry.Entity.CreatedAt = now;
+                    entry.Entity.CreatedBy = userId;
+                    entry.Entity.UpdatedAt = now;
+                    entry.Entity.UpdatedBy = userId;
+                    entry.Entity.IsActive = true;
+                    break;
+
+                case EntityState.Modified:
+                    entry.Entity.UpdatedAt = now;
+                    entry.Entity.UpdatedBy = userId;
+                    break;
+            }
+        }
+    }
+
+    /// <summary>
+    /// Saves all changes made in this context to the database synchronously
+    /// after automatically updating the audit properties of tracked entities.
+    /// </summary>
+    /// <returns>
+    /// The number of state entries written to the database.
+    /// </returns>
+    public override int SaveChanges()
+    {
+        OnBeforeSaving(Guid.Empty);
+        return base.SaveChanges();
+    }
+
+    /// <summary>
+    /// Saves all changes made in this context to the database asynchronously
+    /// after automatically updating the audit properties of tracked entities.
+    /// </summary>
+    /// <param name="cancellationToken">
+    /// A cancellation token that can be used to cancel the save operation.
+    /// </param>
+    /// <returns>
+    /// A task representing the asynchronous save operation. The task result contains
+    /// the number of state entries written to the database.
+    /// </returns>
+    public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+    {
+        OnBeforeSaving(Guid.Empty);
+        return base.SaveChangesAsync(cancellationToken);
     }
 }

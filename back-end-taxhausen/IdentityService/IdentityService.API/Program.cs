@@ -2,7 +2,7 @@ using IdentityService.API.Extension;
 using IdentityService.Infrastructure.Persistence.ApplicationContext;
 using Microsoft.EntityFrameworkCore;
 using Shared.Authorization.Extension;
-using Shared.Comon.Constant;
+using Shared.Common.Constant;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +20,12 @@ builder.Services.AddDbContext<IdentityDbContext>(options =>
         builder.Configuration.GetConnectionString(Constants.DEFAULT_CONNECTION)));
 
 WebApplication app = builder.Build();
+
+if (app.Environment.IsProduction())
+{
+    await app.Services.ApplyPendingMigrations();
+    await app.Services.InitializeSeedData();
+}
 
 if (app.Environment.IsDevelopment())
 {
