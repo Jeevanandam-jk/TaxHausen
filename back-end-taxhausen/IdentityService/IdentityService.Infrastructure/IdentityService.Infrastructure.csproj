@@ -16,4 +16,8 @@
     <PackageReference Include="Microsoft.Extensions.Configuration" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" />
   </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Persistence\SeedData\DataFile\*.csv" />
+  </ItemGroup>
 </Project>
